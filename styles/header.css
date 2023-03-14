@@ -44,4 +44,7 @@
   .account {
     display: none;
   }
+  .header-buttons img {
+    margin-left: 0;
+  }
 }

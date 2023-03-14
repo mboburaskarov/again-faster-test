@@ -3,6 +3,7 @@
 @import './product_card.css';
 @import './carousel.css';
 @import './footer.css';
+@import './loader.css';
 
 :root {
   /* Color variables */
