@@ -95,7 +95,7 @@
   }
   .black-background-container section div,
   .black-background-container section img {
-    max-width: 100%;
+    max-width: calc(100% + 16px);
   }
   .dumbell-image {
     position: static;
