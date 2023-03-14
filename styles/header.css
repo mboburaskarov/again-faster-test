@@ -11,6 +11,10 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 40px;
+  top: 0;
+  background-color: var(--white);
+  z-index: 99;
+  width: 100%;
 }
 
 .header-buttons img {
