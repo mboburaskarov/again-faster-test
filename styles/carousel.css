@@ -19,15 +19,33 @@
 .carousel-prev,
 .carousel-next {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
+  top: 0;
+  width: 80px;
+  height: 100%;
   border: none;
   background-color: transparent;
-  color: #fff;
   font-size: 24px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-prev svg,
+.carousel-next svg {
+  display: none;
+  margin-bottom: 50px;
+}
+
+.carousel-prev:hover {
+  background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+}
+.carousel-next:hover svg,
+.carousel-prev:hover svg {
+  display: block;
+}
+.carousel-next:hover {
+  background: linear-gradient(270deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .carousel-prev {
@@ -38,11 +56,6 @@
   right: 0;
 }
 
-.carousel-prev:hover,
-.carousel-next:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
 .carousel-prev[disabled],
 .carousel-next[disabled] {
   opacity: 0.5;
@@ -50,6 +63,17 @@
 }
 
 @media screen and (max-width: 768px) {
+  .carousel-prev,
+  .carousel-next {
+    width: 20px;
+  }
+  .carousel-prev svg,
+  .carousel-next svg {
+    width: 18px;
+    height: 18px;
+    display: block;
+    margin-bottom: 90px;
+  }
   .carousel-container {
     margin: 16px -4px;
   }
