@@ -1,0 +1,130 @@
+footer {
+  background-color: var(--light-grey);
+  overflow: hidden;
+}
+.footer-section {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  position: relative;
+}
+
+.footer-section h4 {
+  font-family: var(--work-sans);
+  font-size: 12px;
+}
+.footer-section ul {
+  list-style: none;
+}
+
+.newsletter {
+  width: 460px;
+  margin-right: 185px;
+  z-index: 2;
+}
+
+.input-box {
+  border-bottom: 1px solid var(--grey);
+  z-index: 2;
+}
+
+.input-box input {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  padding: 16px 0;
+  font-size: 14px;
+  font-family: var(--work-sans);
+  width: calc(100% - 24px);
+  margin-top: 14px;
+}
+.input-box button {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  margin-left: auto;
+}
+
+.social-media {
+  margin-top: 20px;
+  display: inline-flex;
+}
+.social-media li {
+  margin-right: 20px;
+}
+.social-media a::after {
+  display: none;
+}
+
+.footer-logo {
+  z-index: 1;
+  position: absolute;
+  top: 114px;
+  left: calc(50% - 680px);
+}
+
+.links {
+  display: inline-flex;
+}
+
+.links ul li {
+  margin-bottom: 12px;
+}
+.links ul li a {
+  color: var(--dark-grey);
+  font-size: 14px;
+}
+
+.links ul li:first-child {
+  margin-bottom: 32px;
+}
+
+.links ul {
+  margin-right: 150px;
+}
+.links ul:last-child {
+  margin-right: 0;
+}
+
+.copyright {
+  display: block;
+  padding-bottom: 24px;
+  text-align: center;
+  color: var(--grey);
+  font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .newsletter {
+    width: 100%;
+    margin-right: 0;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+  .links ul li:first-child {
+    margin-top: 13px;
+    margin-bottom: 14px;
+  }
+  .social-media {
+    margin-top: 28px;
+    margin-bottom: 30px;
+  }
+  .copyright {
+    font-size: 12px;
+    padding-bottom: 16px;
+  }
+  .footer-logo {
+    z-index: 1;
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    /* left: calc(50% - 680px); */
+  }
+}

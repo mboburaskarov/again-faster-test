@@ -1,0 +1,128 @@
+.black-background-container {
+  background-color: var(--primary-color);
+  background-image: url('../public/icons/background-lines.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--white);
+}
+
+.black-background-container section {
+  position: relative;
+  display: flex;
+  height: 620px;
+}
+
+.black-background-container section div {
+  width: 100%;
+  max-width: 50%;
+}
+.black-background-container section img {
+  max-width: 50%;
+  object-fit: cover;
+}
+
+.rubber-dumbbell-section {
+  padding-top: 55px;
+}
+
+.rubber-dumbbell-box {
+  margin-right: 40px;
+}
+
+.rubber-dumbbell-title {
+  font-size: 28px;
+}
+
+.rubber-dumbbell-desc {
+  margin-top: 126px;
+  margin-bottom: 80px;
+}
+
+.dumbell-image {
+  height: 100%;
+  min-width: 720px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 !important;
+}
+
+.need-to-know-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 140px;
+}
+
+.need-to-know-box p {
+  font-size: 16px;
+}
+
+.need-to-know-box ul {
+  margin-top: 25px;
+}
+
+.need-to-know-box ul li {
+  margin-bottom: 16px;
+  list-style: none;
+}
+.need-to-know-box ul li::before {
+  content: '/';
+  margin-right: 8px;
+  color: var(--gold);
+}
+
+.perfect-for-workouts-box {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+.perfect-for-workouts-box h2 {
+  max-width: 517px;
+}
+
+@media screen and (max-width: 768px) {
+  .black-background-container {
+    background-image: none;
+  }
+  .black-background-container section {
+    position: static;
+    height: auto;
+    flex-direction: column;
+  }
+  .rubber-dumbbell-section {
+    position: relative;
+  }
+  .black-background-container section div,
+  .black-background-container section img {
+    max-width: 100%;
+  }
+  .dumbell-image {
+    position: static;
+    bottom: 0px;
+    min-width: 100%;
+    margin-right: -16px;
+  }
+  .rubber-dumbbell-box {
+    margin-right: 0;
+    position: relative !important;
+  }
+  .rubber-dumbbell-desc {
+    margin-top: 19px;
+    margin-bottom: 40px;
+  }
+  .need-to-know-box {
+    margin: 24px 0 0 0;
+  }
+  .need-to-know-box ul {
+    margin-top: 16px;
+  }
+  .perfect-for-workouts-box {
+    margin-left: 0;
+  }
+  .perfect-for-workouts-box h2 {
+    letter-spacing: 0;
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+}

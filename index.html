@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Again / Faster</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script src="main.js"></script>
+    <!-- <script src="./scripts/lazyload.js"></script> -->
+  </head>
+
+  <body>
+    <header>
+      <div id="notification-bar" class="notification-bar">
+        <h5>20% OFF Sitewide until 9/12</h5>
+      </div>
+      <section class="header-nav">
+        <img alt="hamburger" class="hamburger" role="button" src="./public/icons/hamburger.svg" />
+
+        <img alt="logo" src="./public/logo/primary.svg" />
+        <nav>
+          <ul>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">consectetur</a></li>
+            <li><a href="#">tempor</a></li>
+            <li><a href="#">magna</a></li>
+            <li><a href="#">reprehenderit</a></li>
+          </ul>
+        </nav>
+        <div class="header-buttons">
+          <img role="button" class="search" alt="search" src="./public/icons/search.svg" />
+          <img role="button" class="account" alt="account" src="./public/icons/account.svg" />
+          <img role="button" alt="bag" src="./public/icons/bag.svg" />
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <div class="black-background-container">
+        <section class="rubber-dumbbell-section">
+          <div class="rubber-dumbbell-box">
+            <h3 class="rubber-dumbbell-title">Rubber Hex Dumbbells</h3>
+            <p class="rubber-dumbbell-desc">
+              Again Faster® Rubber Hex Dumbbells offer one of the most effective ways to add variance to any training
+              program. Functional dumbbell movements cultivate stability, coordination and strength in ways that cannot
+              be achieved using a barbell. Lighter dumbbells are great tools for accommodating athletes with an injury
+              or those not yet comfortable with a bar. Whether you are making your first equipment purchase or looking
+              to expand your gym's capabilities, making dumbbells a priority will take your training to the next level.
+            </p>
+            <p>Need a way to organize your weights? Check out some of our Storage Options.</p>
+          </div>
+          <img alt="dumbell-image" class="dumbell-image lazy" src="./public/images/dumbell-with-lines.png" />
+        </section>
+        <section>
+          <img alt="women-with-dumbbell lazy" src="./public/images/women-with-dumbbell-1.jpg" />
+          <div class="need-to-know-box">
+            <p>Here’s what you need to know about our dumbbells</p>
+            <ul>
+              <li>Texture design for better grip during strength and endurance work</li>
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+              <li>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="perfect-for-workouts-box">
+            <h2 class="bold">Perfect for indoor and outdoor workouts</h2>
+          </div>
+          <img alt="women-with-dumbbell2" class="lazy" src="./public/images/women-with-dumbbell-2.jpg" />
+        </section>
+      </div>
+      <section>
+        <h3>You might also like</h3>
+        <div class="carousel-container">
+          <div class="carousel-wrapper">
+            <script src="./scripts/products.js"></script>
+          </div>
+          <button class="carousel-prev"><</button>
+          <button class="carousel-next">></button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer-section">
+        <img class="footer-logo" src="./public/logo/secondary.svg" alt="logo-secondary" />
+
+        <div class="newsletter">
+          <h4>Newsletter</h4>
+          <div class="input-box">
+            <form novalidate="" tabindex="-1">
+              <input
+                type="email"
+                autocomplete="email"
+                name="email"
+                tabindex="0"
+                placeholder="Enter your email"
+                aria-label="Email"
+              />
+              <button type="button" tabindex="0">
+                <img role="button" src="./public/icons/arrow.svg" alt="arrow" />
+              </button>
+            </form>
+          </div>
+
+          <ul class="social-media">
+            <li>
+              <a href="#"><img src="./public/icons/facebook.svg" alt="facebook" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./public/icons/instagram.svg" alt="instagram" /></a>
+            </li>
+            <li>
+              <a href="mailto:something@gm.com">
+                <img src="./public/icons/mail.svg" alt="email" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="links">
+          <ul>
+            <li><h4>Again Faster</h4></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Military/LEO Discount</a></li>
+            <li><a href="#">Financing</a></li>
+            <li><a href="#">Retail Store</a></li>
+          </ul>
+
+          <ul>
+            <li><h4>Get Help</h4></li>
+            <li><a href="#">Instructions</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns and Warranty</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Shop in Store</a></li>
+          </ul>
+        </div>
+      </section>
+      <span class="copyright">©2023 Again Faster. All Rights Reserved</span>
+    </footer>
+
+    <script src="./scripts/carousel.js"></script>
+  </body>
+</html>
