@@ -8,10 +8,10 @@ const sticky = header.offsetTop
 
 function myFunction() {
   if (window.pageYOffset > sticky) {
-    content.style.marginTop = sticky
+    content.style.paddingTop = '52px'
     header.style.position = 'fixed'
   } else {
-    content.style.marginTop = 0
+    content.style.paddingTop = 0
     header.style.position = 'static'
   }
 }
