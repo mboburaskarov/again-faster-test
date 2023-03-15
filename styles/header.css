@@ -25,6 +25,10 @@
   display: none;
 }
 
+.header-logo::after {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .notification-bar {
     background-color: var(--light-grey);
